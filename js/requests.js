@@ -7,14 +7,17 @@ const header = new Headers({
 });
 
 const statUrl = new URL(mainUrl + 'stats');
-const ES = new EventSource(statUrl, header);
 
-ES.onmessage = message => {
-  getRequestHandler(message.data);
-}
+function runEventSource() {
+	const ES = new EventSource(statUrl, header);
 
-ES.onerror = error => {
-    ES.readyState ? $('.message').text("Ошибка сервера...") : null;
+	ES.onmessage = message => {
+	  getRequestHandler(message.data);
+	}
+
+	ES.onerror = error => {
+	    ES.readyState ? $('.message').text("Ошибка сервера...") : null;
+	}
 }
 
 function getRequestHandler(msgdata){
@@ -85,6 +88,7 @@ function showVotingResults(value){
   $('.wrapper').html(html_text);
   $('#progressbar-' + animal_array[value]).class('progressbar');
   getRequest();
+  runEventSource();
 }
 
 function clearMessage(){
