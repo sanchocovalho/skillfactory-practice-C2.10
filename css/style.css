@@ -1,0 +1,104 @@
+body {
+  text-align: center;
+  background-color: white;
+  font-family: 'Play', sans-serif;
+  font-weight: 400;
+  color: #3914af;
+}
+
+.container {
+  width: 100%;
+  padding: 50px 0;
+  margin: 50px auto;
+  max-width: 900px;
+  background-color: rgb(135, 110, 215);
+}
+ 
+.title {
+  font-weight: 100;
+  font-size: 44px;
+  margin: 20px 0px 20px;
+  -webkit-text-stroke: 1px black;
+}
+
+.aim-title {
+  font-weight: 100;
+  font-size: 28px;
+  margin: 20px 0px 20px;
+}
+ 
+.wrapper {
+  position: relative;
+  margin: 20px auto 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #8f65fe;
+}
+
+.progress-cats {
+  position: absolute;
+  top: 21px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.progress-dogs {
+  position: absolute;
+  top: 82px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.progress-parrots {
+  position: absolute;
+  top: 142px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+progress {
+  margin: 15px 0;
+  border: 0;
+  width: 85%;
+  height: 30px;
+  border-radius: 5px;
+  background: #f1f1f1;
+  box-shadow: inset 0px 3px 3px 0px rgba(0, 0, 0, 0.2), inset 0px -1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+progress::-webkit-progress-bar {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background: #f1f1f1;
+  box-shadow: inset 0px 3px 3px 0px rgba(0, 0, 0, 0.2), inset 0px -1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+progress::-webkit-progress-value {
+  border-radius: 5px;
+  background-color: #3914af;
+  background: linear-gradient(to bottom, #5d44b0 0%,#3914af 50%,#2a01af 51%,#2d04af 100%);
+}
+
+.progressbar::-webkit-progress-value {
+  border-radius: 5px;
+  background: #ffb76b;
+  background: linear-gradient(to bottom,  #ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%);
+}
+
+.message{
+  color: #3914af;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 20px auto 0;
+}
+
+button {
+  margin: 30px 10px 10px 10px;
+  padding: 8px 50px;
+  font-family: 'Play', sans-serif;
+  font-size: 16px;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid #412c84;
+  background-color: #412c84;
+}
