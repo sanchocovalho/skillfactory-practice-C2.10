@@ -1,11 +1,11 @@
 function microJQuery (selector, context = document){
-	this.elements = Array.from(context.querySelectorAll(selector));
-	return this;
+  this.elements = Array.from(context.querySelectorAll(selector));
+  return this;
 }
 
 microJQuery.prototype.each = function (fn){
-	this.elements.forEach((element, index) => fn.call(element, element, index));
-	return this;
+  this.elements.forEach((element, index) => fn.call(element, element, index));
+  return this;
 }
 
 microJQuery.prototype.click = function(fn){
@@ -61,19 +61,6 @@ microJQuery.prototype.val = function(val){
   else
   {
     this.each(element => element.value = val);
-    return this;
-  }
-}
-
-microJQuery.prototype.cssText = function(cssText){
-  if (cssText === undefined)
-  {
-    this.each(element => cssText = element.style.cssText);
-    return cssText;
-  }
-  else
-  {
-    this.each(element => element.style.cssText = cssText);
     return this;
   }
 }

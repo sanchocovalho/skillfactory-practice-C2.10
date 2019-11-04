@@ -85,20 +85,19 @@ progress::-webkit-progress-value {
   background: linear-gradient(to bottom,  #ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%);
 }
 
-.message{
-  color: #3914af;
-  font-size: 24px;
-  font-weight: 400;
-  margin: 20px auto 0;
-}
-
 button {
   margin: 30px 10px 10px 10px;
   padding: 8px 50px;
-  font-family: 'Play', sans-serif;
   font-size: 16px;
   color: white;
   border-radius: 5px;
   border: 2px solid #412c84;
   background-color: #412c84;
+}
+
+.message{
+  color: #3914af;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 20px auto 0;
 }
